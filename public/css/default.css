@@ -8,3 +8,8 @@ input
     background-color: #34353a !important;
     color: white !important;
 }
+.borda-lateral
+{
+    border-left: 1px gray solid;
+    border-right: 1px gray solid;
+}

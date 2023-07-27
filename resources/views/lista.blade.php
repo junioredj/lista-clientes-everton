@@ -7,7 +7,6 @@
     <div class="container">
         <h1 class="text-center mt-5">Lista de Espera</h1>
 
-        <div><a href="/">Voltar</a></div>
         <div class="container mt-5">
             <h3>Pesquisar</h3>
             <form action="">
@@ -19,7 +18,7 @@
         </div>
 
         <div class="container mt-5">
-            <table class="table" id="table">
+            <table class="table " id="table">
                 <tbody>
 
                     <?php
@@ -32,7 +31,7 @@
                             <tr>
                         @endif
 
-                        <td class="text-center" id="{{$user->name}}-info"> <strong class="mx-1">{{ $loop->index + 1 }}</strong> <div id="{{$user->name}}">{{$user->name}}</div></td>
+                        <td class="text-center {{($contador == 1)?"borda-lateral":""}}" id="{{$user->name}}-info"> <strong class="mx-1">{{ $loop->index + 1 }}</strong> <div id="{{$user->name}}">{{$user->name}}</div></td>
 
                         @if($contador == 2)
                             </tr>

@@ -27,7 +27,7 @@ class UserController extends Controller
         $user->save();
 
 
-        return to_route('lista-cadastro');
+        return Redirect::to('https://www.google.com/');
 
 
     }
